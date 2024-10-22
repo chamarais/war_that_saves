@@ -1,0 +1,16 @@
+POST http://localhost:8080/apple/actuator/shutdown
+Accept: application/json
+
+###
+### GET request to example server
+POST http://localhost:8080/apple/employee
+Content-Type: application/json
+
+{
+  "name": "Jane1",
+  "age": 30
+}
+
+
+###
+

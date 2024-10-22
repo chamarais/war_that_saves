@@ -1,0 +1,16 @@
+<routes>
+    <route>
+        <from uri="wmq:queue:DEV.QUEUE.1?jmsMessageType=text"/>
+        <log message="picked up ${body}"/>
+        <throttle>
+            <constant>5</constant>
+        </throttle>
+        <process ref="saveSMS"/>
+        <log message="Saved ${body}"/>
+    </route>
+
+<!--        <route>-->
+<!--            <from uri="timer://foo?fixedRate=true&amp;period=3000"/>-->
+<!--            <log message="Response ${body}"/>-->
+<!--        </route>-->
+</routes>

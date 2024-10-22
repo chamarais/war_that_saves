@@ -1,0 +1,6 @@
+<jboss-web>
+    <resource-ref>
+        <res-ref-name>ORACLE1</res-ref-name>
+        <jndi-name>java:/ORACLE1</jndi-name>
+    </resource-ref>
+</jboss-web>
